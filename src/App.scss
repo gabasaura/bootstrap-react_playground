@@ -1,0 +1,10 @@
+// App.scss
+@import './styles/_custom.scss';
+
+.app {
+  background-color: $primary-color;
+  .header {
+    @include flex-center;
+    color: $secondary-color;
+  }
+}

@@ -1,0 +1,11 @@
+// CUSTOM BOOTSTRAP
+
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
