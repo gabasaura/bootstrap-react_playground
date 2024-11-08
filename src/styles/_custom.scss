@@ -1,8 +1,12 @@
 // CUSTOM BOOTSTRAP
 
-
-$primary-color: #007bff;
+// Definir variables personalizadas
+$primary-color: var(--bs-indigo);
 $secondary-color: #6c757d;
+
+:root {
+--bs-border-radius: 1.375rem;
+}
 
 @mixin flex-center {
   display: flex;

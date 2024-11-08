@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styles from '../styles/Sidebar.module.scss';
-import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import TableChartIcon from '@mui/icons-material/TableChart';
-import GridViewIcon from '@mui/icons-material/GridView';
-import PeopleIcon from '@mui/icons-material/People';
+import MapSharpIcon from '@mui/icons-material/MapSharp';
+import AddLocationAltSharpIcon from '@mui/icons-material/AddLocationAltSharp';
+import AssistantSharpIcon from '@mui/icons-material/AssistantSharp';
+import SettingsIcon from '@mui/icons-material/Settings';
+import EmojiEventsSharpIcon from '@mui/icons-material/EmojiEventsSharp';
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -18,9 +18,9 @@ const Sidebar: React.FC = () => {
         data-bs-toggle="tooltip"
         data-bs-placement="right"
         aria-current="page"
-
       >
-        <HomeIcon fontSize="medium" />
+        <MapSharpIcon fontSize="medium" />
+        {!collapsed && <span className='if-expanded'>Explorer</span>}
       </button>
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
@@ -32,7 +32,8 @@ const Sidebar: React.FC = () => {
             data-bs-toggle="tooltip"
             data-bs-placement="right"
           >
-            <DashboardIcon fontSize="medium" />
+            <AddLocationAltSharpIcon fontSize="medium" />
+            {!collapsed && <span className='if-expanded'>Pipo Point</span>}
           </a>
         </li>
         <li>
@@ -43,7 +44,8 @@ const Sidebar: React.FC = () => {
             data-bs-toggle="tooltip"
             data-bs-placement="right"
           >
-            <GridViewIcon fontSize="medium" />
+            <AssistantSharpIcon fontSize="medium" />
+            {!collapsed && <span className='if-expanded'>Activities</span>}
           </a>
         </li>
         <li>
@@ -54,7 +56,8 @@ const Sidebar: React.FC = () => {
             data-bs-toggle="tooltip"
             data-bs-placement="right"
           >
-            <GridViewIcon fontSize="medium" />
+            <EmojiEventsSharpIcon fontSize="medium" />
+            {!collapsed && <span className='if-expanded'>Ranking</span>}
           </a>
         </li>
       </ul>
@@ -70,14 +73,14 @@ const Sidebar: React.FC = () => {
           title="Customers"
           data-bs-placement="right"
         >
-          <PeopleIcon fontSize="medium" />
+          <SettingsIcon fontSize="medium" />
         </a>
         <ul className="dropdown-menu text-small shadow">
-          <li><a className="dropdown-item" href="#">New project...</a></li>
-          <li><a className="dropdown-item" href="#">Settings</a></li>
-          <li><a className="dropdown-item" href="#">Profile</a></li>
+          <li><a className="dropdown-item" href="#">About Pipo Project</a></li>
+          <li><a className="dropdown-item" href="#">Collaborate</a></li>
+          <li><a className="dropdown-item" href="#">Faqs</a></li>
           <li><hr className="dropdown-divider" /></li>
-          <li><a className="dropdown-item" href="#">Sign out</a></li>
+          <li><a className="dropdown-item" href="#">Contact Us</a></li>
         </ul>
       </div>
     </div>
