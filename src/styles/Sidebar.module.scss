@@ -1,29 +1,25 @@
 /* Sidebar.module.scss */
 .sidebar {
-    background-color: #343a40;
-    color: white;
-    min-width: 200px;
   
-    &.collapsed {
-      width: 50px;
-    }
-  
-    &.expanded {
-      width: 200px;
-    }
+  &.collapsed {
+    width: 50px;
   }
-  
-  .toggleButton {
-    width: 100%;
+
+  &.expanded {
+    width: 200px;
   }
-  
-  .navLink {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-  
-    &:hover {
-      background-color: #495057;
-    }
+}
+
+.toggleButton {
+  width: 100%;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: #495057;
   }
-  
+}
