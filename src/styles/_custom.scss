@@ -1,15 +1,5 @@
-// CUSTOM BOOTSTRAP
+// _custom.scss
+@use 'bootstrap/scss/bootstrap' as *;
 
-// Definir variables personalizadas
-$primary-color: var(--bs-indigo);
-$secondary-color: #6c757d;
 
-:root {
---bs-border-radius: 1.375rem;
-}
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+$font-size-base: 1rem;       // Personalización de la tipografía base

@@ -1,6 +1,6 @@
 // src/components/TopNavbar.tsx
 import React from 'react';
-import styles from '../styles/TopNavbar.module.scss';
+import styles from '@component/TopNavbar.module.scss';
 import { Avatar } from '@mui/material';
 
 

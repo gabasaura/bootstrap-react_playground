@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from './components/Sidebar';
 import TopNavbar from './components/TopNavbar';
 import Content from './components/Content';
-import styles from './styles/App.module.scss';
+import styles from '@pages/App.module.scss';
 
 const App: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/Sidebar.module.scss';
+import styles from '@component/Sidebar.module.scss';
 import MapSharpIcon from '@mui/icons-material/MapSharp';
 import AddLocationAltSharpIcon from '@mui/icons-material/AddLocationAltSharp';
 import AssistantSharpIcon from '@mui/icons-material/AssistantSharp';
