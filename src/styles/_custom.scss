@@ -1,5 +1,11 @@
 // _custom.scss
+
+// custom variables
+$pi_primary_color: #212529;
+
+// Import Bootstrap's Sass variables and mixins
 @use 'bootstrap/scss/bootstrap' as *;
 
+// :root
+    
 
-$font-size-base: 1rem;       // Personalización de la tipografía base

@@ -13,14 +13,14 @@ const Sidebar: React.FC = () => {
     <div className={`d-flex flex-column flex-shrink-0 bg-body-tertiary ${styles.sidebar} ${collapsed ? styles.collapsed : styles.expanded}`}>
 
       <button
-        className={`nav-link active py-3 border-bottom rounded-0 ${styles.toggleButton}`}
+        className={`nav-link py-3 border-bottom rounded-0 ${styles.toggleButton}`}
         onClick={() => setCollapsed(!collapsed)}
         data-bs-toggle="tooltip"
         data-bs-placement="right"
         aria-current="page"
       >
         <MapSharpIcon fontSize="medium" />
-        {!collapsed && <span className='if-expanded'>Explorer</span>}
+        {!collapsed && <span className='if-expanded'>Explore</span>}
       </button>
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
