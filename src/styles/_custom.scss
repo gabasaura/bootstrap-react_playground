@@ -1,11 +1,28 @@
-// _custom.scss
+// custom.scss
 
-// custom variables
-$pi_primary_color: #212529;
+// Importar variables para asegurarse de tener acceso a ellas
+@use 'utils' as *; // Esto trae todas las variables de `utils`
 
-// Import Bootstrap's Sass variables and mixins
-@use 'bootstrap/scss/bootstrap' as *;
+// Sobreescribir algunas variables de Bootstrap antes de importarlo
+$primary: $pi-primary;
+$secondary: $pi-secondary;
+$gray-dark: $pi-gray;
 
-// :root
-    
+// Importar Bootstrap si usas Vite con este enfoque
+@import 'bootstrap/scss/bootstrap'; // Si usas Bootstrap en SASS
 
+// Definir estilos personalizados
+
+// _objects.scss
+
+.nav-link  {
+    color: $pi-primary;
+    text-decoration: none;
+    padding: 0;
+  
+    &:hover {
+      background-color: $pi-secondary;
+    }
+  }
+  
+  

@@ -3,7 +3,7 @@ import styles from '@component/Sidebar.module.scss';
 import MapSharpIcon from '@mui/icons-material/MapSharp';
 import AddLocationAltSharpIcon from '@mui/icons-material/AddLocationAltSharp';
 import AssistantSharpIcon from '@mui/icons-material/AssistantSharp';
-import SettingsIcon from '@mui/icons-material/Settings';
+import HelpSharpIcon from '@mui/icons-material/HelpSharp';
 import EmojiEventsSharpIcon from '@mui/icons-material/EmojiEventsSharp';
 
 const Sidebar: React.FC = () => {
@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
           title="Customers"
           data-bs-placement="right"
         >
-          <SettingsIcon fontSize="medium" />
+          <HelpSharpIcon fontSize="medium" />
         </a>
         <ul className="dropdown-menu text-small shadow">
           <li><a className="dropdown-item" href="#">About Pipo Project</a></li>

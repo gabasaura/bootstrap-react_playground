@@ -9,7 +9,7 @@ const TopNavbar: React.FC = () => {
     <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
       {/* Logo */}
       <div className={`navbar-brand ${styles.logo}`}>
-        <a href="#">Logo</a>
+        <a href="#">PIPO MAP</a>
       </div>
 
       {/* Search Bar */}
@@ -18,7 +18,7 @@ const TopNavbar: React.FC = () => {
           <input
             className={`form-control ${styles.searchInput}`}
             type="search"
-            placeholder="Search"
+            placeholder="Search for nearest restroom"
             aria-label="Search"
           />
         </form>
@@ -37,7 +37,10 @@ const TopNavbar: React.FC = () => {
         <ul className="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownMenuButton">
           <li><a className="dropdown-item" href="#">Settings</a></li>
           <li><a className="dropdown-item" href="#">Profile</a></li>
+
           <li><hr className="dropdown-divider" /></li>
+          <li><a className="dropdown-item" href="#">Sign up</a></li>
+          <li><a className="dropdown-item" href="#">Sign in</a></li>
           <li><a className="dropdown-item" href="#">Sign out</a></li>
         </ul>
 

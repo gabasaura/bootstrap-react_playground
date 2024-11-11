@@ -1,8 +1,7 @@
 // app.scss
 @use 'custom' as *;
-@use 'variables' as *;
 @use 'global' as *;
-@use 'objects' as *;
+@use 'mixins' as *;
 
 /*
 @use 'components/button';
