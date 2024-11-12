@@ -5,6 +5,7 @@ import AddLocationAltSharpIcon from '@mui/icons-material/AddLocationAltSharp';
 import AssistantSharpIcon from '@mui/icons-material/AssistantSharp';
 import HelpSharpIcon from '@mui/icons-material/HelpSharp';
 import EmojiEventsSharpIcon from '@mui/icons-material/EmojiEventsSharp';
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -19,11 +20,23 @@ const Sidebar: React.FC = () => {
         data-bs-placement="right"
         aria-current="page"
       >
-        <MapSharpIcon fontSize="medium" />
+        <MenuSharpIcon fontSize="medium" />
         {!collapsed && <span className='if-expanded'>Explore</span>}
       </button>
 
       <ul className="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li className="nav-item">
+          <a
+            href="#"
+            className="nav-link py-3 border-bottom rounded-0"
+            title="Orders"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+          >
+            <MapSharpIcon fontSize="medium" />
+            {!collapsed && <span className='if-expanded'>Explore</span>}
+          </a>
+        </li>
         <li className="nav-item">
           <a
             href="#"

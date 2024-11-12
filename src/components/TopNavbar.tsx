@@ -14,9 +14,9 @@ const TopNavbar: React.FC = () => {
 
       {/* Search Bar */}
       <div className="d-flex justify-content-center flex-grow-1">
-        <form className="d-flex" role="search">
+        <form className="d-flex w-75" role="search">
           <input
-            className={`form-control ${styles.searchInput}`}
+            className={`form-control rounded-pill ${styles.searchInput}`}
             type="search"
             placeholder="Search for nearest restroom"
             aria-label="Search"
