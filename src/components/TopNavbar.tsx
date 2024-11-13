@@ -34,7 +34,7 @@ const TopNavbar: React.FC = () => {
         >
           <Avatar src="https://github.com/mdo.png" alt="mdo" sx={{ width: 24, height: 24 }} />
         </a>
-        <ul className="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownMenuButton">
+        <ul className="dropdown-menu dropdown-menu-end text-small shadow-lg rounded-0" aria-labelledby="dropdownMenuButton">
           <li><a className="dropdown-item" href="#">Settings</a></li>
           <li><a className="dropdown-item" href="#">Profile</a></li>
 
