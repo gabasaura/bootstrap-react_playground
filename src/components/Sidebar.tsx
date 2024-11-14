@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styles from '@component/Sidebar.module.scss';
-import MapSharpIcon from '@mui/icons-material/MapSharp';
 import AddLocationAltSharpIcon from '@mui/icons-material/AddLocationAltSharp';
 import AssistantSharpIcon from '@mui/icons-material/AssistantSharp';
 import HelpSharpIcon from '@mui/icons-material/HelpSharp';
 import EmojiEventsSharpIcon from '@mui/icons-material/EmojiEventsSharp';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import MenuOpenSharpIcon from '@mui/icons-material/MenuOpenSharp';
+import MapTwoToneIcon from '@mui/icons-material/MapTwoTone';
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -39,7 +39,7 @@ const Sidebar: React.FC = () => {
             data-bs-toggle="tooltip"
             data-bs-placement="right"
           >
-            <MapSharpIcon fontSize="small" />
+            <MapTwoToneIcon fontSize="small" />
             {!collapsed && <span className='if-expanded'>Explore</span>}
           </a>
         </li>
